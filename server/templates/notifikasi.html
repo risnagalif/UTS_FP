@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% block konten %}
+<div class="container" style="padding: 30px 0px;">
+    <div class="judul-kategori" style="padding: 10px 30px; background-color: #eeb146;">
+      <h5 class="text-center" style= "margin-top: 5px;   padding: 30px 40px;"><strong>NOTIFIKASI ANDA</strong></h5>
+      <div class ="row">
+          <div class="col-lg-4 col-md4 col-sm-4 col-4 mt-2">
+              <div class="card tex-center">
+                  <img src="{{ url_for('static',filename='img/promo1.jpg') }}" class="card-img-top" alt="...">
+                  <div class="card-body " style="background-color: black;">
+               
+                    <a href="#" class="btn btn-dark d-grid">Notifikasi Promo</a>
+                  </div>
+                </div>
+             
+              </div>
+              <div class="col-lg-4 col-md4 col-sm-4 col-4 mt-2" >
+                  <div class="card tex-center">
+                    <img src="{{ url_for('static',filename='img/kontak.png') }}" class="card-img-top" alt="..." >
+                      <div class="card-body" style="background-color: black;">
+                        <a href="#" class="btn btn-dark d-grid">Notifikasi Kontak</a>
+                      </div>
+                    </div>
+                 
+                  </div>
+                  <div class="col-lg-4 col-md4 col-sm-4 col-4 mt-2">
+                      <div class="card tex-center">
+                          <img src="{{ url_for('static',filename='img/buykuy.png') }}" class="card-img-top" alt="...">
+                          <div class="card-body" style="background-color: black;">
+                            <a href="#" class="btn btn-dark d-grid">Notifikasi BuyKuy</a>
+                          </div>
+                        </div>
+                     
+                      
+
+{% endblock %}
